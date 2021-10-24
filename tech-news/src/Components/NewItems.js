@@ -6,11 +6,11 @@ export class NewItems extends Component {
     return (
       <div className="my-3">
         <div className="card">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{ zIndex: "1", left: "90%" }}>{source}</span>
+          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{ zIndex: "1", left: "90%" }}>{source}</span>
           <img src={imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
-            {/* <span class="badge bg-secondary">New</span> */}
+            {/* <span className="badge bg-secondary">New</span> */}
             <p className="card-text">{description}</p>
             <p className="card-text"><small className="text-muted">By {!author ? "unknown" : author} on {new Date(date).toGMTString()}</small></p>
             <a href={newsUrl} className="btn btn-sm btn-dark">
